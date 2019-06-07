@@ -29,7 +29,7 @@ class JoboffersController < ApplicationController
   # POST /joboffers.json
   def create
     @joboffer = Joboffer.new(joboffer_params)
-    @joboffer.user = current_user
+    # @joboffer.user = current_user
     respond_to do |format|
       if @joboffer.save
         format.html { redirect_to @joboffer, notice: 'Joboffer was successfully created.' }
