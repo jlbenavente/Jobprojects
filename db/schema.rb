@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_07_100656) do
+ActiveRecord::Schema.define(version: 2019_06_07_105243) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2019_06_07_100656) do
     t.bigint "joboffer_id"
     t.integer "final_price"
     t.boolean "agreed"
-    t.boolean "payed"
+    t.boolean "payed", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["joboffer_id"], name: "index_agreements_on_joboffer_id"

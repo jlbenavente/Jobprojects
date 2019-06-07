@@ -5,7 +5,7 @@ class CreateAgreements < ActiveRecord::Migration[5.2]
       t.references :joboffer, foreign_key: true
       t.integer :final_price
       t.boolean :agreed
-      t.boolean :payed
+      t.boolean :payed, default: false
 
       t.timestamps
     end
