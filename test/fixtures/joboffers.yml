@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  photo: MyString
+  budget: 1
+  start_date: 2019-06-06 20:34:54
+  end_date: 2019-06-06 20:34:54
+  location_id: 1
+  skill_id: 1
+  user_id: 1
+
+two:
+  title: MyString
+  description: MyText
+  photo: MyString
+  budget: 1
+  start_date: 2019-06-06 20:34:54
+  end_date: 2019-06-06 20:34:54
+  location_id: 1
+  skill_id: 1
+  user_id: 1

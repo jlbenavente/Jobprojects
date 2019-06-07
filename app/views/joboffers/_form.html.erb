@@ -1,0 +1,62 @@
+<%= form_with(model: joboffer, local: true) do |form| %>
+  <% if joboffer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(joboffer.errors.count, "error") %> prohibited this joboffer from being saved:</h2>
+
+      <ul>
+      <% joboffer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :photo %>
+    <%= form.text_field :photo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :budget %>
+    <%= form.number_field :budget %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.datetime_select :start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date %>
+    <%= form.datetime_select :end_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location_id %>
+    <%= form.number_field :location_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :skill_id %>
+    <%= form.number_field :skill_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.number_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
