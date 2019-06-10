@@ -7,5 +7,9 @@ Rails.application.routes.draw do
   get 'users/show'
 
   resources :joboffers
+
+  resources :joboffers, only: :show do
+  	resources :agreements, only: :create
   end
+end
   

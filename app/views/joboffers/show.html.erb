@@ -47,3 +47,6 @@
 
 <%= link_to 'Edit', edit_joboffer_path(@joboffer) %> |
 <%= link_to 'Back', joboffers_path %>
+
+<%= link_to 'Cerrar trato', joboffer_agreements_path(@joboffer), class: 'btn btn-success', method: :post %>
+

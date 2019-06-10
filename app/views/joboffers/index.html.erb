@@ -15,9 +15,10 @@
                 <tr>
                       <td><%= image_tag joboffer.photo,size:'400x200', class: "card-img-top" %></td>
                       <td><h5><%= joboffer.title %></h5></td>
-                      <td><%= joboffer.description %></td>
-                      <td><%= joboffer.location_id %></td>
-                      <td><%= joboffer.user_id %></td>
+                      
+                      <td><p><%=h truncate(joboffer.description, :length => 250) %></p></td>
+                      <td><p><%= joboffer.location_id %></p></td>
+                      <td><p><%= joboffer.user_id %></p></td>
                       <td><%= link_to "Mostrar", joboffer_path(joboffer), class:'btn btn-success' %></td>
                       <td>
                         <% if can?(:edit, joboffer) %>
