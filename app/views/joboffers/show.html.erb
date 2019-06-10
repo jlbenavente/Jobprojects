@@ -42,7 +42,8 @@
 
 <p>
   <strong>User:</strong>
-  <%= @joboffer.user_id %>
+  <%= @joboffer.user.name %>
+  <%= @joboffer.user.last_name %>
 </p>
 
 <%= link_to 'Edit', edit_joboffer_path(@joboffer) %> |

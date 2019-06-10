@@ -46,7 +46,7 @@ class JoboffersController < ApplicationController
   def update
     respond_to do |format|
       if @joboffer.update(joboffer_params)
-        format.html { redirect_to @joboffer, notice: 'Joboffer was successfully updated.' }
+        format.html { redirect_to @joboffer, notice: 'Tu Aviso fue creado exitosamente.' }
         format.json { render :show, status: :ok, location: @joboffer }
       else
         format.html { render :edit }
@@ -60,7 +60,7 @@ class JoboffersController < ApplicationController
   def destroy
     @joboffer.destroy
     respond_to do |format|
-      format.html { redirect_to joboffers_url, notice: 'Joboffer was successfully destroyed.' }
+      format.html { redirect_to joboffers_url, notice: 'Tu Aviso fue eliminado.' }
       format.json { head :no_content }
     end
   end

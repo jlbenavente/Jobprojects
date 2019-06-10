@@ -18,7 +18,12 @@
                       
                       <td><p><%=h truncate(joboffer.description, :length => 250) %></p></td>
                       <td><p><%= joboffer.location_id %></p></td>
-                      <td><p><%= joboffer.user_id %></p></td>
+                      <td><p>
+                            <strong>Usuario:</strong>
+                            <%= joboffer.user.name %>
+                            <%= joboffer.user.last_name %>
+                          </p>
+                        </td>
                       <td><%= link_to "Mostrar", joboffer_path(joboffer), class:'btn btn-success' %></td>
                       <td>
                         <% if can?(:edit, joboffer) %>
@@ -41,3 +46,4 @@
     </div>
 
     <%= link_to "Nuevo Aviso", new_joboffer_path, class:'btn btn-warning' %>
+ 
