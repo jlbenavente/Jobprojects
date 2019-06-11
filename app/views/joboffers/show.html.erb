@@ -10,6 +10,12 @@
   <%= @joboffer.description %>
 </p>
 
+<% (0...@joboffer.images.count).each do |image| %>
+    <%= image_tag(@joboffer.thumbnail(image)) %>
+<% end %>
+
+
+
 <p>
   <strong>Photo:</strong>
   <%= @joboffer.photo %>
