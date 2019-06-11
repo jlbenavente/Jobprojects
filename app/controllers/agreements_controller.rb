@@ -1,6 +1,9 @@
 class AgreementsController < ApplicationController
   before_action :authenticate_user!
 
+  def index
+    @agreements = current_user.agreements
+  end
   def create
   	@joboffer = Joboffer.find(params[:joboffer_id])
   	@agreement = Agreement.new(joboffer: @joboffer, user: current_user)

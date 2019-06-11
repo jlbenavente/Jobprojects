@@ -1,0 +1,23 @@
+<table class="table table-striped">
+	<% @agreements.each do |agreement| %>
+		<thead>
+		  <tr>
+		  	<th scope="col">Trabajo</th>
+		  	<th scope="col">Dueño del aviso</th>
+	      <th scope="col">Precio Final</th>
+		  </tr>
+		</thead>
+		<tbody>
+	    <tr>
+	    	
+	      <td><%= agreement.joboffer.title %></td>
+	      <td>
+	      	<%= agreement.joboffer.user.name %>
+          <%= agreement.joboffer.user.last_name %>
+        </td>
+			  <td><%= agreement.joboffer.budget %></td>
+	    </tr>
+    </tbody>
+
+	<% end %>
+</table>

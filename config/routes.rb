@@ -14,5 +14,10 @@ Rails.application.routes.draw do
   	resources :agreements, only: :create
   end
 
+  resources :joboffers, only: :show do
+    resources :comments
+  end
+
+
 end
   

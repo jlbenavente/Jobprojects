@@ -11,11 +11,13 @@ class JoboffersController < ApplicationController
   # GET /joboffers/1
   # GET /joboffers/1.json
   def show
+    @comment = Comment.new
+    @comments = Comment.all.order('created_at DESC')
   end
 
   # GET /joboffers/new
   def new
-    @joboffer = Joboffer.new
+
   end
 
   # GET /joboffers/1/edit

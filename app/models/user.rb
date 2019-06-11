@@ -6,5 +6,6 @@ class User < ApplicationRecord
 
   has_many :agreements       
   has_many :joboffers, through: :agreements
+  has_many :comments
   
 end
