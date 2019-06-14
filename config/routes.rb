@@ -17,7 +17,5 @@ Rails.application.routes.draw do
   resources :joboffers, only: :show do
     resources :comments
   end
-
-
 end
   
