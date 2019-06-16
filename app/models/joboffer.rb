@@ -12,6 +12,12 @@ class Joboffer < ApplicationRecord
 
   validates :title, presence: true
   validates :description, presence: true
-  validates :skill_id, presence: true
+  # validates :skill_id, presence: true
+  # validates :image1, presence: false
+  # validates :image2, presence: false
+  # validates :image3, presence: false
+  # validates :image4, presence: false
+  # validates :image5, presence: false
+  # validates :image6, presence: false
 
 end
