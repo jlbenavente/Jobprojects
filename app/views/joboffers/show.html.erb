@@ -21,42 +21,6 @@
     </div>
 
     <div class="card">
-      <a href="" data-toggle="modal" data-target="#exampleModal2">
-        <% if @joboffer.image2.attached? %>
-          <%= image_tag @joboffer.image2, size:'360x230', class: "card-img-top"  %>
-        <% end %>
-      </a>
-    </div>
-    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <button type="button" class="close mr-1" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-        <% if @joboffer.image2.attached? %>
-          <%= image_tag @joboffer.image2, class: "img-fluid rounded card-img-top"  %>
-        <% end %>
-      </div>
-    </div>
-
-    <div class="card">
-      <a href="" data-toggle="modal" data-target="#exampleModal3">
-        <% if @joboffer.image3.attached? %>
-          <%= image_tag @joboffer.image3, size:'360x230', class: "card-img-top"  %>
-        <% end %>
-      </a>
-    </div>
-    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <button type="button" class="close mr-1" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-        <% if @joboffer.image3.attached? %>
-          <%= image_tag @joboffer.image3, class: "img-fluid rounded card-img-top"  %>
-        <% end %>
-      </div>
-    </div>
-
-      <div class="card">
       <a href="" data-toggle="modal" data-target="#exampleModal4">
         <% if @joboffer.image4.attached? %>
           <%= image_tag @joboffer.image4, size:'360x230', class: "card-img-top"  %>
@@ -75,6 +39,24 @@
     </div>
 
     <div class="card">
+      <a href="" data-toggle="modal" data-target="#exampleModal2">
+        <% if @joboffer.image2.attached? %>
+          <%= image_tag @joboffer.image2, size:'360x230', class: "card-img-top"  %>
+        <% end %>
+      </a>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <button type="button" class="close mr-1" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <% if @joboffer.image2.attached? %>
+          <%= image_tag @joboffer.image2, class: "img-fluid rounded card-img-top"  %>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="card">
       <a href="" data-toggle="modal" data-target="#exampleModal5">
         <% if @joboffer.image5.attached? %>
           <%= image_tag @joboffer.image5, size:'360x230', class: "card-img-top"  %>
@@ -88,6 +70,24 @@
       <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
         <% if @joboffer.image5.attached? %>
           <%= image_tag @joboffer.image5, class: "img-fluid rounded card-img-top"  %>
+        <% end %>
+      </div>
+    </div>
+    
+    <div class="card">
+      <a href="" data-toggle="modal" data-target="#exampleModal3">
+        <% if @joboffer.image3.attached? %>
+          <%= image_tag @joboffer.image3, size:'360x230', class: "card-img-top"  %>
+        <% end %>
+      </a>
+    </div>
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <button type="button" class="close mr-1" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <% if @joboffer.image3.attached? %>
+          <%= image_tag @joboffer.image3, class: "img-fluid rounded card-img-top"  %>
         <% end %>
       </div>
     </div>

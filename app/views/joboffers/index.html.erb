@@ -13,7 +13,7 @@
               <div style="padding: 10px" class="body">
                 <tr>
                    
-                     
+                     <td><%= image_tag joboffer.image1, size:'360x230', class: "card-img-top" %></td>
                       <td><h5><%= joboffer.title %></h5></td>
                       
                       <td><p class="text-break"><%=h truncate(joboffer.description, :length => 250) %></p></td>
